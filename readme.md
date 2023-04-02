@@ -27,11 +27,11 @@ _Tecnologias utilizadas en el proyecto_
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Noe**  - *Dev* - [villanuevand](https://github.com/noe)
-* **Pato** - *Dev* - [fulanitodetal](https://github.com/noe)
-* **Martin** - *Dev* - [fulanitodetal](https://github.com/noe)
-* **Samuel** - *Dev* - [fulanitodetal](https://github.com/noe)
-* **Seba** - *Dev* - [fulanitodetal](https://github.com/noe)
+* **Noe**  - *Dev* - [Noe](https://github.com/noe)
+* **Pato** - *Dev* - [Pato](https://github.com/noe)
+* **Martin** - *Dev* - [Martin](https://github.com/noe)
+* **Samuel** - *Dev* - [Samuel](https://github.com/noe)
+* **Seba** - *Dev* - [Seba](https://github.com/noe)
 
 
 ## Licencia 📄
