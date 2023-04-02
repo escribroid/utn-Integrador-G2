@@ -25,8 +25,6 @@ _Tecnologias utilizadas en el proyecto_
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
 * **Noe**  - *Dev* - [Noe](https://github.com/noe)
 * **Pato** - *Dev* - [Pato](https://github.com/noe)
 * **Martin** - *Dev* - [Martin](https://github.com/noe)
@@ -36,7 +34,7 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia 
 
 ## Expresiones de Gratitud 🎁
 
