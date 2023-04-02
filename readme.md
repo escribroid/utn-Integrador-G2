@@ -14,13 +14,13 @@ _Con un navegador web puedes acceder al sitio_
 
 _Tecnologias utilizadas en el proyecto_
 
-* [Html](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Css](https://maven.apache.org/) - Manejador de dependencias
-* [Javascript](https://rometools.github.io/rome/) - Usado para generar RSS
-* [Jquery](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Validate.js](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [jsPDF.js](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Ajax](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [Html]
+* [Css]
+* [Javascript]
+* [Jquery]
+* [Validate.js]
+* [jsPDF.js]
+* [Ajax]
 
 
 ## Autores ✒️
