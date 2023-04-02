@@ -10,9 +10,6 @@ _El sitio se puede vosulaizar en https://escrib.github.io/utn-Integrador-G2._
 
 _Con un navegador web puedes acceder al sitio_
 
-```
-Da un ejemplo
-```
 ## Construido con 🛠️ y ❤️
 
 _Tecnologias utilizadas en el proyecto_
