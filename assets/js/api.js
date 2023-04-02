@@ -8,6 +8,6 @@ $(document).ready(function () {
             var row = $('<tr>');
             row.append($(`<th> 1 u$s </th>`));
             row.append($(`<th>$ ${ dol }</th>`));
-            $('#tabla tbody').append(row);}
+            $('#tablaApi tbody').append(row);}
     );
 })
