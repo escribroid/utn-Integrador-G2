@@ -34,37 +34,75 @@
         <table id="tablaApi">
             <tbody></tbody>
         </table>
-        <header>
-            <div class="logo"><img src="./assets/img/logo.svg" alt="Logo de {G2} Diseño Web"></div>
-            La cabecera de una página o un bloque de contenido es esta
-            <h1>Diseño Integral & Creativo</h1>
-        </header>
-        <nav>Esta es la barra de navegación principal del sitio</nav>
-        <main>
-            <section>
-                Esta es una sección de contenido del bloque principal (MAIN)
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
-                <p>Este es el contenido principal de mi web (MAIN)</p>
-                <div>
-                    <p>Aquí tenéis una imagen.</p>
+        <header class="headerPrincipal">
+            <div class="container">
+                <h1 class="logo">
+                    <img src="./assets/img/logo.svg" alt="Logo de {G2} Diseño Web">
+                </h1>
+                <nav>
+                    <ul class="menu">
+                        <a class="menuLink" href="#">Servicios</a>
+                        <a class="menuLink" href="#">Portfolio</a>
+                        <a class="menuLink" href="#">Clientes</a>
+                        <a class="menuLink" href="#">Equipo</a>
+                        <a class="menuLink" href="#">Contacto</a>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hero container">
+                <div class="heroText">
+                    <h1>Diseño Integral & Creativo</h1>
+                    <p>Utilizamos las últimas tecnologías en el campo digital y cognitivo para transformar las organizaciones en todos los aspectos.</p>
                     <button class="boton">Enviar formulario</button>
-                    <img src="http://dominio.com/imagen.jpg" alt="paisaje" />
                 </div>
-                <article>Esto es un artículo del sitio</article>
-                <article>Esto sería un segundo artículo</article>
+                <div class="heroImage">
+                    <img src="assets/img/hero-image.svg" alt="Equipo de G2 trabajando en un proyecto." />
+                </div>
+            </div>
+                        
+        </header>
+        
+        <main class="container">
+
+            <section class="servicios">
+                Acá va todo el contenido de Servicios.
             </section>
+
+            <section class="valores">
+                Acá va todo el contenido de Valores.
+            </section>
+
+            <section class="tecnologias">
+                Acá va todo el contenido de Tecnologías.
+            </section>
+
+            <section class="equipo">
+                Acá va todo el contenido de Equipo.
+            </section>
+
+            <section class="formulario">
+                Acá va todo el contenido de Formulario.
+            </section>
+
         </main>
+
         <footer>
-            <h4>Esto es un pie de página</h4>
-            <h4>Avisos legales</h4>
-            <a href="http://dominio.com/aviso-legal">Política de cookies</a>
-            <h4>Redes sociales</h4>
-            <a href="http://facebook.com/mi-pagina-de-facebook">Facebook</a>
+            <div class="container">
+                <div class="footerInfo">
+                    <h1>
+                        <img src="./assets/img/logo-footer.svg" alt="Logo de {G2} Diseño Web">
+                    </h1>
+                    <h5 class="copyright">Copyright {G2} Diseño Web © 2023</h5>
+                </div>
+                <div class="footerSocial">
+                    <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Logo de Instagram"></a>
+                    <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Logo de Facebook"></a>
+                    <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Logo de Twitter"></a>
+                </div>
+            </div>
         </footer>
+
         <script src="assets/js/jquery-3.6.4.min.js"></script>
         <script src="assets/js/api.js"></script>
     </body>
