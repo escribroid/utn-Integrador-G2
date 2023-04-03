@@ -1,0 +1,70 @@
+form {
+  margin-bottom: 20px;
+}
+
+#step-2 {
+  display: none;
+}
+
+#summary {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.container{
+  width: 330px;
+  background: #fff;
+  text-align: center;
+  border-radius: 7px;
+  padding: 40px 35px 5px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.container.formulario-principal{
+  width:100%;
+  overflow: hidden;
+  /* tengo el formulario oculto */}
+
+.formulario-principal form {
+  display: flex;
+  width: 200%;
+}
+
+.formulario-principal form pagina{
+  width:50%;
+}
+
+.formulario-principal .pagina .titulo{
+width: auto;
+}
+
+.formulario-principal form .pagina .campo{
+
+}
+
+.formulario-principal form .pagina .campo .label{
+
+}
+
+.formulario-principal form .pagina .campo input{
+
+}
+
+.formulario-principal form .pagina .campo select  {
+  widht:100%;
+}
+
+.formulario-principal form .pagina .campo button{
+
+}
+
+.formulario-principal form .pagina .campo button:hover{
+  
+}/*  esto es para cuando pso por arriba del boton */
+
+/* ver para clase boton volver y siguiente */
+

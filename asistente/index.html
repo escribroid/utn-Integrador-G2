@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>Solicitud de presupuesto</header>
+      <div class="formulario-principal">
+        <!-- <div class="step"> -->
+          <form action="#">
+        <!-- pagina 1  -->
+        <div class="pagina">
+          <div class="titulo">información básica </div>
+          <div class="campo">
+            <div class="label">Nombre de su empresa</div>
+            <input type="text">
+          </div>
+          <div class="campo">
+            <div class="label">tipo de desarrollo</div>
+              <select>
+                <option>pyme</option>
+                <option>web personal</option>
+                <option>e-comeerce</option>
+              </select>
+              <div class="campo">
+                <div class="label">Fecha de entrega aproximada</div>
+                <input type="date">
+              </div>
+          </div>
+          <div class="campo buttons">
+              <button class="avanzarpag1 siguiente">Siguiente</button>
+            </div>
+          </div>
 
+              <!-- pagina 2  -->
+        <div class="pagina">
+          <div class="titulo">Informacion de contacto  </div>
+          <div class="campo">
+            <div class="label">Nombre y apellido</div>
+            <input type="text">
+          </div>
+          <div class="label">e mail</div>
+            <input type="text">
+            <div class="campo">
+              <button class="retrocederpag0 anterior">anterior</button>
+              <button class="avanzarpag2 siguiente">Siguiente</button>
+            </div>
+          </div>
+          </form>
+        </body>
+        </html>
+                      
+<!-- 
+    <h1>Asistente de dos pasos</h1>
+    
+    <form id="step-1">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="button" id="next-btn">Siguiente</button>
+    </form>
+
+    <form id="step-2">
+      <p>Resumen:</p>
+      <div id="summary"></div>
+    </form>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
