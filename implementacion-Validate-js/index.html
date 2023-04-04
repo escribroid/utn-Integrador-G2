@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <script src="validate.js"></script>
+  <style>
+    .help-block.error {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Validate.js solo hay que cambiar los ID por los de nuestro formulario, y darle estilo a los mensajes de error</h1>
+    <form id="main" class="form-horizontal" action="/example" method="post" novalidate>
+
+     <div class="form-group">
+        <label class="col-sm-2 control-label" for="nombre">Nombre</label>
+        <div class="col-sm-5">
+          <input id="nombre" class="form-control" type="text" placeholder="Nombre" name="nombre">
+        </div>
+        <div class="col-sm-5 messages">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="apellido">Apellido</label>
+        <div class="col-sm-5">
+          <input id="apellido" class="form-control" type="text" placeholder="Apellido" name="apellido">
+        </div>
+        <div class="col-sm-5 messages">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="email">Email</label>
+        <div class="col-sm-5">
+          <input id="email" class="form-control" type="email" placeholder="Email" name="email">
+        </div>
+        <div class="col-sm-5 messages"></div>
+      </div>
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="telefono">Teléfono</label>
+        <div class="col-sm-5">
+          <input id="telefono" class="form-control" type="text" placeholder="Telefono" name="telefono">
+        </div>
+        <div class="col-sm-5 messages"></div>
+      </div>
+     
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <script>
+    (function() {
+      validate.extend(validate.validators.datetime, {
+        parse: function(value, options) {
+          return +moment.utc(value);
+        },
+        format: function(value, options) {
+          var format = options.dateOnly ? "YYYY-MM-DD" : "YYYY-MM-DD hh:mm:ss";
+          return moment.utc(value).format(format);
+        }
+      });
+
+      var constraints = {
+        email: {
+          presence: true,
+          email: true
+        },
+        nombre: {
+          presence: true,
+          length: {
+            minimum: 3,
+            maximum: 20
+          },
+          format: {
+            pattern: "[a-z0-9]+",
+            flags: "i",
+            message: "can only contain a-z and 0-9"
+          }
+        },
+        apellido: {
+          presence: true,
+          length: {
+            minimum: 3,
+            maximum: 20
+          },
+          format: {
+            pattern: "[a-z0-9]+",
+            flags: "i",
+            message: "can only contain a-z and 0-9"
+          }
+        },
+        telefono: {
+          format: {
+            pattern: "[0-9]+"
+          },
+          length: {
+            minimum: 7,
+            maximum: 20
+          },
+        },
+       };
+
+      var form = document.querySelector("form#main");
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        handleFormSubmit(form);
+      });
+
+      var inputs = document.querySelectorAll("input, textarea, select")
+      for (var i = 0; i < inputs.length; ++i) {
+        inputs.item(i).addEventListener("change", function(ev) {
+          var errors = validate(form, constraints) || {};
+          showErrorsForInput(this, errors[this.name])
+        });
+      }
+
+      function handleFormSubmit(form, input) {
+        var errors = validate(form, constraints);
+        showErrors(form, errors || {});
+        if (!errors) {
+          showSuccess();
+        }
+      }
+
+      function showErrors(form, errors) {
+        _.each(form.querySelectorAll("input[name], select[name]"), function(input) {
+          showErrorsForInput(input, errors && errors[input.name]);
+        });
+      }
+
+      function showErrorsForInput(input, errors) {
+        var formGroup = closestParent(input.parentNode, "form-group")
+          , messages = formGroup.querySelector(".messages");
+        resetFormGroup(formGroup);
+        if (errors) {
+          formGroup.classList.add("has-error");
+          _.each(errors, function(error) {
+            addError(messages, error);
+          });
+        } else {
+          formGroup.classList.add("has-success");
+        }
+      }
+
+      function closestParent(child, className) {
+        if (!child || child == document) {
+          return null;
+        }
+        if (child.classList.contains(className)) {
+          return child;
+        } else {
+          return closestParent(child.parentNode, className);
+        }
+      }
+
+      function resetFormGroup(formGroup) {
+        formGroup.classList.remove("has-error");
+        formGroup.classList.remove("has-success");
+        _.each(formGroup.querySelectorAll(".help-block.error"), function(el) {
+          el.parentNode.removeChild(el);
+        });
+      }
+
+      function addError(messages, error) {
+        var block = document.createElement("p");
+        block.classList.add("help-block");
+        block.classList.add("error");
+        block.innerText = error;
+        messages.appendChild(block);
+      }
+
+      function showSuccess() {
+        alert("Success!");
+      }
+    })();
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
