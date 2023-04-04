@@ -1,0 +1,9 @@
+.help-block.error {
+    margin-bottom: 5px;
+}
+.messages {
+    display: flex;
+    position: relative;
+    background-color: aqua;
+    color: black;
+}

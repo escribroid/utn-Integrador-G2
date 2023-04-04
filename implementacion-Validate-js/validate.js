@@ -771,7 +771,7 @@
     presence: function(value, options) {
       options = v.extend({}, this.options, options);
       if (options.allowEmpty !== false ? !v.isDefined(value) : v.isEmpty(value)) {
-        return options.message || this.message || "can't be blank";
+        return options.message || this.message || "no puede estar vacio";
       }
     },
     length: function(value, options, attribute) {
@@ -792,28 +792,28 @@
       value = tokenizer(value);
       var length = value.length;
       if(!v.isNumber(length)) {
-        return options.message || this.notValid || "has an incorrect length";
+        return options.message || this.notValid || "tiene un largo incorrecto";
       }
 
       // Is checks
       if (v.isNumber(is) && length !== is) {
         err = options.wrongLength ||
           this.wrongLength ||
-          "is the wrong length (should be %{count} characters)";
+          "demasiado largo (should be %{count} caracteres)";
         errors.push(v.format(err, {count: is}));
       }
 
       if (v.isNumber(minimum) && length < minimum) {
         err = options.tooShort ||
           this.tooShort ||
-          "is too short (minimum is %{count} characters)";
+          "demasiado corto (minimo %{count} caracteres)";
         errors.push(v.format(err, {count: minimum}));
       }
 
       if (v.isNumber(maximum) && length > maximum) {
         err = options.tooLong ||
           this.tooLong ||
-          "is too long (maximum is %{count} characters)";
+          "demasiado largo (maximo %{count} caracteres)";
         errors.push(v.format(err, {count: maximum}));
       }
 
@@ -857,7 +857,7 @@
             options.notValid ||
             this.notValid ||
             this.message ||
-            "must be a valid number";
+            "ingrese un numero valido";
         }
       }
 
@@ -872,7 +872,7 @@
           options.notValid ||
           this.notValid ||
           this.message ||
-          "is not a number";
+          "no es un numero";
       }
 
       // Same logic as above, sort of. Don't bother with comparisons if this
@@ -882,7 +882,7 @@
           options.notInteger ||
           this.notInteger ||
           this.message ||
-          "must be an integer";
+          "ingrese un entero";
       }
 
       for (name in checks) {
@@ -895,7 +895,7 @@
           var msg = options[key] ||
             this[key] ||
             this.message ||
-            "must be %{type} %{count}";
+            "debe ser %{type} %{count}";
 
           errors.push(v.format(msg, {
             count: count,
@@ -908,13 +908,13 @@
         errors.push(options.notOdd ||
             this.notOdd ||
             this.message ||
-            "must be odd");
+            "debe ser extraño");
       }
       if (options.even && value % 2 !== 0) {
         errors.push(options.notEven ||
             this.notEven ||
             this.message ||
-            "must be even");
+            "debe incluir");
       }
 
       if (errors.length) {
@@ -992,7 +992,7 @@
 
       options = v.extend({}, this.options, options);
 
-      var message = options.message || this.message || "is invalid"
+      var message = options.message || this.message || "no valido"
         , pattern = options.pattern
         , match;
 
@@ -1026,7 +1026,7 @@
       }
       var message = options.message ||
         this.message ||
-        "^%{value} is not included in the list";
+        "^%{value} no esta incluido en la lista";
       return v.format(message, {value: value});
     },
     exclusion: function(value, options) {
@@ -1049,7 +1049,7 @@
     },
     email: v.extend(function(value, options) {
       options = v.extend({}, this.options, options);
-      var message = options.message || this.message || "is not a valid email";
+      var message = options.message || this.message || "no es un email valido";
       // Empty values are fine
       if (!v.isDefined(value)) {
         return;
@@ -1074,10 +1074,10 @@
       options = v.extend({}, this.options, options);
       var message = options.message ||
         this.message ||
-        "is not equal to %{attribute}";
+        "no es igual a %{attribute}";
 
       if (v.isEmpty(options.attribute) || !v.isString(options.attribute)) {
-        throw new Error("The attribute must be a non empty string");
+        throw new Error("no debe estar vacio");
       }
 
       var otherValue = v.getDeepObjectValue(attributes, options.attribute)
@@ -1101,7 +1101,7 @@
 
       options = v.extend({}, this.options, options);
 
-      var message = options.message || this.message || "is not a valid url"
+      var message = options.message || this.message || "no es una url valida"
         , schemes = options.schemes || this.schemes || ['http', 'https']
         , allowLocal = options.allowLocal || this.allowLocal || false
         , allowDataUrl = options.allowDataUrl || this.allowDataUrl || false;
@@ -1179,7 +1179,7 @@
 
       var type = options.type;
       if (!v.isDefined(type)) {
-        throw new Error("No type was specified");
+        throw new Error("No se especificó ningún tipo");
       }
 
       var check;
