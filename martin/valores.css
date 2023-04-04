@@ -1,1 +1,32 @@
-/* Poner acá todos los estilos de Valores */ 
+body{
+    background-color: #D9D9D9;
+}
+.contenedor{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.imagen{
+    width: 45vw;
+    height: 98vh;
+    margin-right: 130px;
+}
+
+.txt{
+    font-size: smaller;
+    margin-right: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 23px;
+    color: black;
+}
+span{
+    /*text-decoration-color: blueviolet;*/
+    text-decoration: dotted;
+    color: blueviolet;
+}
+.text2{
+    color: black;
+    font-family:fantasy;
+}
