@@ -1,0 +1,66 @@
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+/* HEADER */
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+}
+.menuLink{
+    color: var(--color-grisclaro);
+    margin: 0 1rem;
+}
+.menuLink:hover{
+    opacity: 0.8;
+}
+
+#tablaApi {
+    color: var(--color-azul);
+    float: right;
+}
+
+/* HERO */ 
+.hero{
+    margin: 0 3rem;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+}
+.heroText, .heroImage{
+    width: 48%;
+}
+.heroImage{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid var(--color-grisclaro);
+    margin-top: 2rem;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerInfo{
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    font-size: 80%;
+    padding-left: 2rem;
+}
+.footerSocial a{
+    margin: 0 1rem;
+}
+.footerSocial a:hover{
+    opacity: 0.8;
+}
