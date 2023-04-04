@@ -24,6 +24,7 @@ body{
     font-weight: 100;
     letter-spacing: 0.03rem;
     font-size: 1.1rem;
+    margin: 0px;
 }
 h1{
     font-family: var(--roboto-mono);
