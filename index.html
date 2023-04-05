@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/valores.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/equipo.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/formulario.css" type="text/css" />
 </head>
 
 <body>
@@ -44,11 +45,11 @@
             </h1>
             <nav>
                 <ul class="menu">
-                    <a class="menuLink" href="#">Servicios</a>
-                    <a class="menuLink" href="#">Portfolio</a>
-                    <a class="menuLink" href="#">Clientes</a>
-                    <a class="menuLink" href="#">Equipo</a>
-                    <a class="menuLink" href="#">Contacto</a>
+                    <a class="menuLink" href="#navServicios">Servicios</a>
+                    <a class="menuLink" href="#navValores">Valores</a>
+                    <a class="menuLink" href="#navTecnologias">Tecnologías</a>
+                    <a class="menuLink" href="#navEquipo">Equipo</a>
+                    <a class="menuLink" href="#navFormulario">Contacto</a>
                 </ul>
             </nav>
         </div>
@@ -69,11 +70,11 @@
 
     <main>
 
-        <section class="servicios container">
+        <section class="servicios container" id="navServicios">
             Acá va todo el contenido de Servicios.
         </section>
 
-        <section class="valores">
+        <section class="valores" id="navValores">
             <div class="valoresImage">
                 <img src="./assets/img/computadoras.png" alt="" width="100%">
             </div>
@@ -82,11 +83,11 @@
             </div>
         </section>
 
-        <section class="tecnologias">
+        <section class="tecnologias" id="navTecnologias">
             Acá va todo el contenido de Tecnologías.
         </section>
 
-        <section class="equipo">
+        <section class="equipo" id="navEquipo">
             <h2>El team {G2}</h2>
             <div class="contImagenesEquipo">
                 <div>          
@@ -117,8 +118,17 @@
             </div>  
         </section>
 
-        <section class="formulario container">
-            Acá va todo el contenido de Formulario.
+        <section class="formulario container"  id="navFormulario">
+            <h1>Formulario de Contacto</h1>
+            <div class="formularioForm">
+                <form action="">
+                    <input type="text" id="nombre" class="input-padron" placeholder="Nombre y Apellido" required>
+                    <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                    <textarea cols="60" rows="10" id="mensaje" class="input-padron" placeholder="Su mensaje" required></textarea>
+                    <button class="boton">Enviar formulario</button>
+                </form>
+            </div>
         </section>
 
     </main>

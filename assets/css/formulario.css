@@ -1,0 +1,26 @@
+.formulario{
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.formulario h1{
+  color: var(--color-violeta);
+}
+.formularioForm{
+  width: 60%;
+  margin: 0px auto;
+}
+.input-padron{
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 20px;
+  font-family: var(--roboto-mono);
+  font-size: 1rem;
+}
+input, textarea{
+  border-color: var(--color-violeta);
+  border-width: 2px;
+  background: none;
+  border-style: solid;
+}
