@@ -37,7 +37,7 @@ $(function() {
         correo: {
             required: "Por favor ingrese un correo electronico",
             email: "Introduce correo electrónico válido de hasta 50 caracteres",
-            length: "Su contraseña debe tener al menos 55 caracteres."
+            length: "Su contraseña debe tener al menos 55 caracteres.",
           },
       },
       submitHandler: function(form) {
