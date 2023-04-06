@@ -29,8 +29,8 @@ $(function() {
           },
         telefono: {
           required: "Por favor proporcione un telefono",
-          minlength: "Debe tener entre 5 y 15 caracteres.",
-          maxlength: "Debe tener entre 5 y 15 caracteres.",
+          minlength: "El número debe tener entre 5 y 15 caracteres.",
+          maxlength: "El número debe tener entre 5 y 15 caracteres.",
           digits: "Ingrese solo numeros",
 
         },
