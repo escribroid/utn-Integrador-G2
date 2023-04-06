@@ -1,5 +1,6 @@
 .valores{
     display: flex;
+    flex-wrap: wrap;
     background-color: #D9D9D9;
     padding: 0px;
 }
@@ -8,7 +9,7 @@
     height: auto;
 }
 .valoresText{
-    width: 60%;
+    width: 50%;
     padding: 4rem;
 }
 .valoresTitle{
@@ -22,4 +23,14 @@ span{
 .text2{
     color: var(--color-background);
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .valoresImage{
+        width: 100%;
+        padding: 0px;
+    }
+    .valoresText{
+        width: 100%;
+    }
 }
