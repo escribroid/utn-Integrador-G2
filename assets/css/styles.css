@@ -11,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .menu{
     display: flex;
@@ -31,6 +32,8 @@ body{
 /* HERO */ 
 .hero{
     margin: 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 .hero .container{
     display: flex;
@@ -66,4 +69,21 @@ footer .container{
 }
 .footerSocial a:hover{
     opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .headerPrincipal{
+        flex-direction: column;
+        align-items: initial; 
+        text-align: center;
+    }
+    .menu{
+        flex-direction: column;
+        width: 90%;;
+    }
+    .menuLink{
+        border-bottom: solid var(--color-violeta) 1px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }

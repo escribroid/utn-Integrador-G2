@@ -25,7 +25,7 @@ span{
     font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .valoresImage{
         width: 100%;
         padding: 0px;
