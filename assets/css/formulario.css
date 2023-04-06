@@ -25,14 +25,8 @@ input, textarea{
   background: none;
   border-style: solid;
 }
-.help-block.error {
-  margin-bottom: 5px;
-}
-.messages {
-  display: flex;
-  position: relative;
-  top: 100px;
-  left: 200px;
-  background-color: aqua;
-  color: rgb(53, 223, 31);
+form .error {
+
+  color: #ff0000;
+
 }
