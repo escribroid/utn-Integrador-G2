@@ -17,10 +17,22 @@
   border-radius: 20px;
   font-family: var(--roboto-mono);
   font-size: 1rem;
+  color: aliceblue;
 }
 input, textarea{
   border-color: var(--color-violeta);
   border-width: 2px;
   background: none;
   border-style: solid;
+}
+.help-block.error {
+  margin-bottom: 5px;
+}
+.messages {
+  display: flex;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  background-color: aqua;
+  color: rgb(53, 223, 31);
 }
