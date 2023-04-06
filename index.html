@@ -29,6 +29,7 @@
     <!--<link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />-->
     <link rel="stylesheet" href="./assets/css/bases.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/servicios.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/valores.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/equipo.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/formulario.css" type="text/css" />
@@ -71,13 +72,25 @@
                 <img src="assets/img/hero-image.svg" alt="Equipo de G2 trabajando en un proyecto." />
             </div>
         </div>
-
     </header>
 
     <main>
-
         <section class="servicios container" id="navServicios">
-            Acá va todo el contenido de Servicios.
+            <h2>Qué ofrecemos en {G2}</h2>
+            <div class="serviciosBoxes">
+                <div class="serviciosBoxesSingle backVioleta">
+                    <img src="./assets/img/servicios-estrategia.png" alt="Estrategia">
+                    <h5>Estrategia</h5>
+                </div>
+                <div class="serviciosBoxesSingle backAzul">
+                    <img src="./assets/img/servicios-diseno.png" alt="Estrategia">
+                    <h5>Diseño UX / UI</h5>
+                </div>
+                <div class="serviciosBoxesSingle backVerde">
+                    <img src="./assets/img/servicios-programacion.png" alt="Estrategia">
+                    <h5>Programación</h5>
+                </div>
+            </div>
         </section>
 
         <section class="valores" id="navValores">
@@ -85,7 +98,12 @@
                 <img src="./assets/img/computadoras.png" alt="" width="100%">
             </div>
             <div class="valoresText">
-                <h4 class="valoresTitle">En {G2} transformamos <span>negocios con soluciones digitales poderosas y adaptables</span>  que satisfacen las necesidades de hoy y desbloquean las oportunidades del mañana.</h4>                      <p class="text2">Creamos productos digitales para una variedad de necesidades aplicando el método ágil de desarrollo de software. Buscamos las herramientas, prácticas y tecnología para cada caso, con el objetivo de desarrollar soluciones confiables, sostenibles y eficientes.</p>
+                <h4 class="valoresTitle">En {G2} transformamos <span>negocios con soluciones digitales poderosas y
+                        adaptables</span> que satisfacen las necesidades de hoy y desbloquean las oportunidades del
+                    mañana.</h4>
+                <p class="text2">Creamos productos digitales para una variedad de necesidades aplicando el método ágil
+                    de desarrollo de software. Buscamos las herramientas, prácticas y tecnología para cada caso, con el
+                    objetivo de desarrollar soluciones confiables, sostenibles y eficientes.</p>
             </div>
         </section>
 
@@ -96,12 +114,12 @@
         <section class="equipo" id="navEquipo">
             <h2>El team {G2}</h2>
             <div class="contImagenesEquipo">
-                <div>          
+                <div>
                     <img class="img_equipo" src="./assets/img/equipo-martin.png" alt="">
                     <h6 class="nosotros">MARTIN PINI</h6>
                     <p class="actividad">Project Manager</p>
                 </div>
-                <div>                    
+                <div>
                     <img class="img_equipo" src="./assets/img/equipo-noelia.png" alt="">
                     <h6 class="nosotros">NOELIA SOROKIN</h6>
                     <p class="actividad">Estrategia</p>
@@ -121,19 +139,21 @@
                     <h6 class="nosotros">SEBASTIAN SUAREZ</h6>
                     <p class="actividad">Developer</p>
                 </div>
-            </div>  
+            </div>
         </section>
 
-        <section class="formulario container"  id="navFormulario">
+        <section class="formulario container" id="navFormulario">
             <h1>Formulario de Contacto</h1>
             <div class="formularioForm">
                 <form id="main" action="#" name="contacto">
-                    <input type="text" id="nombre" class="input-padron" placeholder="Nombre y Apellido" type="text" name="nombre">
+                    <input type="text" id="nombre" class="input-padron" placeholder="Nombre y Apellido" type="text"
+                        name="nombre">
                     <input type="email" id="correo" name="correo" class="input-padron" placeholder="email@dominio.com">
                     <input type="tel" id="telefono" name="telefono" class="input-padron" placeholder="(XX) XXXX XXXX">
-                    <textarea cols="60" rows="10" id="mensaje" class="input-padron" placeholder="Su mensaje" required></textarea>
+                    <textarea cols="60" rows="10" id="mensaje" class="input-padron" placeholder="Su mensaje"
+                        required></textarea>
                     <button type="submit" class="boton">Enviar formulario</button>
-                    </form>
+                </form>
             </div>
         </section>
 

@@ -1,5 +1,5 @@
 /* Poner acá todos los estilos de Equipo */ 
-h2 {
+.equipo h2 {
     display: flex;
     position: relative;
     /*top: 40px;*/

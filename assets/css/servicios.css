@@ -1,6 +1,8 @@
 /* Poner acá todos los estilos de Servicios */ 
 .servicios{
   text-align: center;
+  margin-top: 6rem;
+  padding-bottom: 4rem;
 }
 .servicios h2{
   margin-bottom: 4rem;

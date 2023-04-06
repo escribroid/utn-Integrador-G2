@@ -46,11 +46,11 @@ h4{
 h5{
     font-family: var(--roboto-mono);
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 h6{
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 a{
     color: var(--color-azul);

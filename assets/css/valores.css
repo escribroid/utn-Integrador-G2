@@ -21,4 +21,5 @@ span{
 }
 .text2{
     color: var(--color-background);
+    font-size: 1.3rem;
 }
