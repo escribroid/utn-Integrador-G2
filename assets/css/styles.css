@@ -42,6 +42,9 @@ body{
 .heroText, .heroImage{
     width: 48%;
 }
+.heroText .boton{
+    margin-top: 1rem;
+}
 .heroImage{
     text-align: center;
 }

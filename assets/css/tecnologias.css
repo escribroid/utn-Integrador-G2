@@ -1,0 +1,23 @@
+/* Poner acá todos los estilos de Tecnologías */ 
+.tecnologias{
+    background-color: var(--color-grisclaro);
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 4rem;
+}
+.titulo_tec{
+    color: var(--color-azul);
+}
+.cuerpo_tec{
+    color: var(--color-background);
+}
+.footer_imag{
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+}
