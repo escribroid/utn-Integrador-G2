@@ -18,7 +18,9 @@
     font-size: 2rem;
 }
 span{
-    color: var(--color-violeta);
+    background: linear-gradient(90deg, var(--color-violeta) 0%, var(--color-azul) 48.96%, var(--color-verde) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .text2{
     color: var(--color-background);
