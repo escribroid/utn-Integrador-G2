@@ -46,6 +46,10 @@ body{
     text-align: center;
 }
 
+.imgValoresImage{
+    width: 100%;
+}
+
 /* FOOTER */
 footer{
     border-top: 1px solid var(--color-grisclaro);
@@ -86,4 +90,14 @@ footer .container{
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+    .heroText{
+        width: 60%;
+    }
+    .heroImage{
+        width: 80%;
+    }
+    .imgHeroImage{
+        width: 100%;
+    }
+
 }

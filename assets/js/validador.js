@@ -24,8 +24,8 @@ $(function() {
       messages: {
         nombre: {
             required: "Por favor, introduzca su nombre y apellido",
-            minlength: "Su contraseña debe tener entre 3 y 50 caracteres.",
-            maxlength: "Su contraseña debe tener entre 3 y 50 caracteres.",
+            minlength: "Su nombre debe tener entre 3 y 50 caracteres.",
+            maxlength: "Su nombre debe tener entre 3 y 50 caracteres.",
           },
         telefono: {
           required: "Por favor proporcione un telefono",
