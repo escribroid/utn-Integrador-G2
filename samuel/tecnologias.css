@@ -1,1 +1,27 @@
 /* Poner acá todos los estilos de Tecnologías */ 
+
+
+body{
+    background-color: #EFEFEF;
+}
+.titulo_tec{
+    margin-top: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    text-align: center;
+    font-size: 35px;   
+}
+.cuerpo_tec
+{
+    text-align: center;
+    font-family: fantasy;
+}
+.footer_imag{
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
