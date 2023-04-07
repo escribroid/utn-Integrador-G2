@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- <meta name="language" content="Spanish" /> -->
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta name="keywords" content="" /> -->
+    <!-- <meta name="author" content="" /> -->
+    <!-- <meta name="robots" content="All" /> -->
+    <!-- <meta name="REPLY-TO" content="" /> -->
+    <!-- <meta name="distribution" content="Global" /> -->
+    <!-- <meta name="Revisit-after" content="1 days" /> -->
+    <!-- <link rel=”icon” href=”./favicon.ico” type=”image/x-icon” /> -->
+    <!-- <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” /> -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" /> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" /> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" /> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-48x48.png" /> -->
+    <!-- <link rel="manifest" href="./site.webmanifest" /> -->
+    <!-- <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" /> -->
+    <!-- <meta name="msapplication-TileColor" content="#da532c" /> -->
+    <!-- <meta name="theme-color" content="#ffffff" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />-->
+    <link rel="stylesheet" href="./assets/css/bases.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Solicitud de presupuesto</h1></header>
+      <div class="formulario-principal">
+        <!-- <div class="step"> -->
+          <form action="#">
+
+        <!-- pagina 1  -->
+        <div class="pagina movPag">
+          <div class="titulo "><h2>información básica </h2></div>
+          <div class="campo">
+            <div class="label">Nombre de su empresa</div>
+            <input type="text" id="nombre-empresa">
+          </div>
+          <div class="campo">
+            <div class="label">tipo de desarrollo</div>
+              <select id="web" name="web" onchange="ShowSelected()";> 
+                <option>pyme</option>
+                <option>web personal</option>
+                <option>e-comeerce</option>
+              </select>
+              <div class="campo">
+                <div class="label">Fecha de entrega aproximada</div>
+                <input type="date" id="fecha_entrega">
+              </div>
+          </div>
+          <div class="campo boton">
+              <button class="avanzarpag1 siguiente">Siguiente </button>
+            </div>
+          </div>
+
+              <!-- pagina 2  -->
+        <div class="pagina pagina2">
+          <div class="titulo">Informacion de contacto  </div>
+          <div class="campo">
+            <div class="label" >Nombre y apellido</div>
+            <input type="text" id="nombreyapellido"   >
+          </div>
+          <div class="campo">
+          <div class="label">e mail</div>
+            <input type="text" id="email">
+          </div>
+            <div class="campo boton">
+              <button class="retrocederpag0 anterior">anterior</button>
+              <button class="avanzarpag2 siguiente">Siguiente</button>
+            </div>
+          </div>
+          </form>
+          <script src="script.js"></script>
+        </body>
+        </html>
+                      
+<!-- 
+    <h1>Asistente de dos pasos</h1>
+    
+    <form id="step-1">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="button" id="next-btn">Siguiente</button>
+    </form>
+
+    <form id="step-2">
+      <p>Resumen:</p>
+      <div id="summary"></div>
+    </form>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
