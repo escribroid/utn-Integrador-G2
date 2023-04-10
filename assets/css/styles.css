@@ -23,6 +23,11 @@ body{
 .menuLink:hover{
     opacity: 0.8;
 }
+.menuLink .fa-regular{
+    color: var(--color-violeta);
+    opacity: 0.6;
+    padding-right: 0.3rem;
+}
 
 #tablaApi {
     color: var(--color-azul);
@@ -79,14 +84,23 @@ footer .container{
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
     .headerPrincipal{
         flex-direction: column;
         align-items: initial; 
         text-align: center;
     }
+    .headerPrincipal .container{
+        justify-content: center;
+    }
+    nav, .menu{
+        width: 100%;
+    }
     .menu{
         flex-direction: column;
-        width: 90%;;
+        margin-left: -40px;
     }
     .menuLink{
         border-bottom: solid var(--color-violeta) 1px;
@@ -96,11 +110,20 @@ footer .container{
     .heroText{
         width: 60%;
     }
+    .hero{
+        margin: 0px;
+    }
     .heroImage{
         width: 80%;
     }
     .imgHeroImage{
         width: 100%;
+        margin-top: 3rem;
     }
-
+    .heroText{
+        width: 94%;
+    }
+    .heroText h1{
+        font-size: 2.3rem;
+    }
 }
