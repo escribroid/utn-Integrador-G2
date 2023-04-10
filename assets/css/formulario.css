@@ -17,7 +17,7 @@
   border-radius: 20px;
   font-family: var(--roboto-mono);
   font-size: 1rem;
-  color: aliceblue;
+  color: var(--color-grisclaro);
 }
 input, textarea{
   border-color: var(--color-violeta);
@@ -26,7 +26,12 @@ input, textarea{
   border-style: solid;
 }
 form .error {
+  color: var(--color-verde);
+}
 
-  color: #d78af3;
-
+@media (max-width: 768px) {
+  .formularioForm{
+    width: 94%;
+    margin: 0px auto;
+  }
 }
