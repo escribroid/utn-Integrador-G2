@@ -24,9 +24,13 @@ input, textarea{
   border-width: 2px;
   background: none;
   border-style: solid;
+  margin-top: 10px;
 }
 form .error {
   color: var(--color-verde);
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulario</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/bases.css" type="text/css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="stop" class="boton-subir">
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+            <header><h1>Solicitud de presupuesto</h1></header>
+            <div class="formulario-principal">
+                <!-- <div class="step"> -->
+                <form action="#">
+                    <!-- pagina 1  -->
+                    <div class="pagina movPag">
+                        <div class="titulo"><h2>información básica</h2></div>
+                        <div class="campo">
+                            <div class="label">Nombre de su empresa</div>
+                            <input type="text" id="nombre-empresa" />
+                        </div>
+                        <div class="campo">
+                            <div class="label">tipo de desarrollo</div>
+                            <select
+                                id="web"
+                                name="web"
+                                onchange="ShowSelected()"
+                            >
+                                <option>pyme</option>
+                                <option>web personal</option>
+                                <option>e-comeerce</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <div class="label">Fecha de entrega aproximada</div>
+                            <input type="date" id="fecha_entrega" />
+                        </div>
+                        <div class="campo boton">
+                            <button class="avanzarpag1 siguiente">
+                                Siguiente
+                            </button>
+                        </div>
+                    </div>
+                    <!-- pagina 2  -->
+                    <div class="pagina pagina2">
+                        <div class="titulo">Informacion de contacto</div>
+                        <div class="campo">
+                            <div class="label">Nombre y apellido</div>
+                            <input type="text" id="nombreyapellido" />
+                        </div>
+                        <div class="campo">
+                            <div class="label">e mail</div>
+                            <input type="text" id="email" />
+                        </div>
+                        <div class="campo boton">
+                            <button class="retrocederpag0 anterior">
+                                anterior
+                            </button>
+                            <button class="avanzarpag2 siguiente">
+                                Siguiente
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
