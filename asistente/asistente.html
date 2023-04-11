@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Asistente de Presupuesto</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="language" content="Spanish" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="All" />
-    <meta name="REPLY-TO" content="" />
-    <meta name="distribution" content="Global" />
-    <meta name="Revisit-after" content="1 days" />
-    <link rel=”icon” href=”./favicon.ico” type=”image/x-icon” />
-    <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-48x48.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" /> 
-    <meta name="theme-color" content="#ffffff" /> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/bases.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Solicitud de presupuesto</h1>
-      <div class="formulario-principal">
-        <!-- <div class="step"> -->
-        <form action="#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Asistente de Presupuesto</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="language" content="Spanish" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="robots" content="All" />
+  <meta name="REPLY-TO" content="" />
+  <meta name="distribution" content="Global" />
+  <meta name="Revisit-after" content="1 days" />
+  <link rel=”icon” href=”./favicon.ico” type=”image/x-icon” />
+  <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-48x48.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/bases.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Solicitud de presupuesto</h1>
+    <div class="formulario-principal">
+      <!-- <div class="step"> -->
+      <form action="#">
 
         <!-- pagina 1  -->
         <div class="pagina movPag">
-          <div class="titulo "><h2>Información básica </h2></div>
+          <h2 class="titulo">Información básica</h2>
           <div class="campo">
-            <div class="label">Nombre de su empresa</div>
-            <input type="text" id="nombre-empresa">
+            <label>Nombre de su empresa</label>
+            <input type="text" id="nombre-empresa" class="inputsFormulario">
           </div>
           <div class="campo">
-            <div class="label">Tipo de desarrollo</div>
-              <select id="web" name="web" onchange="ShowSelected()";> 
-                <option>Pyme</option>
-                <option>Web personal</option>
-                <option>E-commerce</option>
-              </select>
-              <div class="campo">
-                <div class="label">Fecha de entrega aproximada</div>
-                <input type="date" id="fecha_entrega">
-              </div>
+            <label>Tipo de desarrollo</label>
+            <select id="web" name="web" onchange="ShowSelected()" class="inputsFormulario">
+              <option>Pyme</option>
+              <option>Web personal</option>
+              <option>E-commerce</option>
+            </select>
           </div>
-          <div class="campo boton">
-              <button class="avanzarpag1 siguiente">Siguiente </button>
-            </div>
+          <div class="campo">
+            <label>Fecha de entrega aproximada</label>
+            <input type="date" id="fecha_entrega" class="inputsFormulario">
           </div>
+          <div class="campo">
+            <button class="avanzarpag1 siguiente boton botonSiguiente">Siguiente </button>
+          </div>
+        </div>
 
         <!-- pagina 2  -->
         <div class="pagina pagina2">
-          <div class="titulo">Informacion de contacto  </div>
+          <h2 class="titulo">Informacion de contacto</h2>
           <div class="campo">
-            <div class="label" >Nombre y apellido</div>
-            <input type="text" id="nombreyapellido"   >
+            <label>Nombre y apellido</label>
+            <input type="text" id="nombreyapellido" class="inputsFormulario">
           </div>
           <div class="campo">
-          <div class="label">e mail</div>
-            <input type="text" id="email">
+            <label>E-mail</label>
+            <input type="text" id="email" class="inputsFormulario">
           </div>
-            <div class="campo boton">
-              <button class="retrocederpag0 anterior">anterior</button>
-              <button class="avanzarpag2 siguiente">Siguiente</button>
-            </div>
+          <div class="campo">
+            <button class="retrocederpag0 anterior boton botonAnterior">Anterior</button>
+            <button class="avanzarpag2 siguiente boton botonSiguiente">Siguiente</button>
           </div>
-          </form>
-          <script src="script.js"></script>
-        </body>
-        </html>
-                      
+        </div>
+      </form>
+    </div>
+  <script src="script.js"></script>
+  </body>
+
+</html>
+
 <!-- 
     <h1>Asistente de dos pasos</h1>
     

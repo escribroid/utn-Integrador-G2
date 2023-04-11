@@ -12,10 +12,10 @@ const BotonAvance2 = document.querySelector(".avanzarpag2");
 BotonAvance1.addEventListener("click", function() {
   // recopilar datos del primer paso
   let name = document.getElementById("nombre-empresa").value;
-    alert ("hola su empresa es "+name);
+    alert ("Hola su empresa es "+name);
   let tipo_web = document.querySelector("#web").value;
   let fechaentrega= document.getElementById("fecha_entrega").value;
-  alert("ya agendamos el tipo de desarrollo que desea y la fecha");
+  alert("Ya agendamos el tipo de desarrollo que desea y la fecha");
   movPag.style.display= "none"; 
   pagina2.style.display="block";  
 });
@@ -23,9 +23,9 @@ BotonAvance1.addEventListener("click", function() {
 BotonAvance2.addEventListener("click", function() {
     // tomo info de los input
     let nombreyapellido = document.getElementById("nombreyapellido").value;
-    alert ("le responderemos a la brevedad. gracias a ud: "+nombreyapellido);
+    alert ("Le responderemos a la brevedad. gracias a ud: "+nombreyapellido);
    let mail= document.getElementById("email").value;
-   alert ("le esceibiremos a este mail "+mail);
+   alert ("Le esceibiremos a este mail "+mail);
    pagina2.style.display="none";
   
     //falta mostrar resumen en el segundo paso

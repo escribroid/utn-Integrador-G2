@@ -2,80 +2,57 @@
   text-align: center;
   margin: auto;
   width: 30%;
-  background: linear-gradient(90deg, var(--color-violeta) 0%, var(--color-azul) 48.96%, var(--color-verde) 100%);
+  background: linear-gradient(30deg, var(--color-violeta) 0%, var(--color-azul) 48.96%, var(--color-verde) 100%);
   text-align: center;
   border-radius: 7px;
   padding: 2rem;
   margin-top: 2rem;
 }
-
 form{
-  margin-bottom: 30px;
   margin-top: 2rem;
 }
-
 .pagina2 {
   display: none;
 }
 
-/*.container header {
-  font-size: 30px;
-  text-align: center;
-  font-weight: 500;
-  margin: 0 0 0px 0;
-  color: black;
-  padding: 30px 20px 0px 0px;
-}*/
-
-.formulario-principal form pagina {
-  width: 100px;
-  height: 50px;
-  margin: 5px 0;
-  /* // position: relative; */
+/* BOTONES */
+.botonSiguiente{
+  background: var(--color-verde);
+}
+.botonAnterior{
+  background: none;
+  border: 1px var(--color-verde) solid;
 }
 
+/* FORMULARIO */
 .formulario-principal .pagina .titulo {
-  width: auto;
-  font-size: 25px;
-  color: #181818;
-  align-items: center;
-  margin: 20px;
+  color: var(--color-background);
 }
-
-.formulario-principal form .pagina .campo {
-  height: 100%;
-  font-size: 15px;
-  margin: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.campo{
+  padding: 1rem;
 }
-
-
-.formulario-principal form .pagina .campo .label {
-  height: 20%;
+.campo input{
+  height: 24px;
+  border: none;
+}
+.campo select{
+  height: 28px;
   width: 100%;
-  /* border: 2px solid lightgrey;  */
-  /* border-radius: 5px;  */
-  padding-bottom: 10px;
-  font-size: 15px;
-  margin-bottom: 0px;
-  margin-top: 15px;
+  padding-right: 1rem;
+}
+.inputsFormulario{
+  width: 92%;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.5rem;
 }
 
-.formulario-principal form .pagina .campo input {
-  height: 100%;
-  width: 90%;
-  /* border: 1px solid lightgrey; */
-  padding-left: 30px;
-  font-size: 15px;
+@media (max-width: 1200px) {
+  .container{
+    width: 50%;
+  }
 }
-
-.formulario-principal form .pagina .campo select {
-  width: 100%;
-  font-size: 15px;
-  margin: 10px 10 30;
-}
-
 @media (max-width: 768px) {
   .container{
     width: 96%;
