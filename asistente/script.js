@@ -23,7 +23,7 @@ BotonAvance2.addEventListener("click", function () {
   // tomo info de los input
   let nombreyapellido = document.getElementById("nombreyapellido").value;
   let mail = document.getElementById("email").value;
-  alert("Le responderemos a la brevedad. Muchas gracias, " + nombreyapellido + "Le responderemos al email " + mail);
+  alert("Le responderemos a la brevedad. Muchas gracias, " + nombreyapellido + ". Le responderemos al email " + mail);
   pagina2.style.display = "none";
 
   //falta mostrar resumen en el segundo paso
