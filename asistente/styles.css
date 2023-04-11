@@ -4,14 +4,14 @@
   width: 30%;
   background: linear-gradient(30deg, var(--color-violeta) 0%, var(--color-azul) 48.96%, var(--color-verde) 100%);
   text-align: center;
-  border-radius: 7px;
+  border-radius: 20px;
   padding: 2rem;
   margin-top: 2rem;
 }
 form{
   margin-top: 2rem;
 }
-.pagina2 {
+.pagina2{
   display: none;
 }
 
@@ -25,7 +25,8 @@ form{
 }
 
 /* FORMULARIO */
-.formulario-principal .pagina .titulo {
+.subtitulo{
+  font-size: 2rem;
   color: var(--color-background);
 }
 .campo{

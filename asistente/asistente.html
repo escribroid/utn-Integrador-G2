@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Asistente de Presupuesto</title>
@@ -30,7 +29,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/bases.css" type="text/css" />
-  <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="./styles.css" type="text/css" />
 </head>
 
 <body>
@@ -40,16 +39,16 @@
       <!-- <div class="step"> -->
       <form action="#">
 
-        <!-- pagina 1  -->
+        <!-- Página 1  -->
         <div class="pagina movPag">
-          <h2 class="titulo">Información básica</h2>
+          <h2 class="subtitulo">Información básica</h2>
           <div class="campo">
             <label>Nombre de su empresa</label>
             <input type="text" id="nombre-empresa" class="inputsFormulario">
           </div>
           <div class="campo">
             <label>Tipo de desarrollo</label>
-            <select id="web" name="web" onchange="ShowSelected()" class="inputsFormulario">
+            <select id="web" name="web" onchange="ShowSelected();" class="inputsFormulario">
               <option>Pyme</option>
               <option>Web personal</option>
               <option>E-commerce</option>
@@ -57,16 +56,17 @@
           </div>
           <div class="campo">
             <label>Fecha de entrega aproximada</label>
-            <input type="date" id="fecha_entrega" class="inputsFormulario">
+            <input type="date" id="fecha-entrega" class="inputsFormulario">
           </div>
           <div class="campo">
-            <button class="avanzarpag1 siguiente boton botonSiguiente">Siguiente </button>
+            <a href="../index.html"><button class="boton botonAnterior">Volver a Home</button></a>
+            <button class="avanzarpag1 siguiente boton botonSiguiente">Siguiente</button>
           </div>
         </div>
 
-        <!-- pagina 2  -->
+        <!-- Página 2  -->
         <div class="pagina pagina2">
-          <h2 class="titulo">Informacion de contacto</h2>
+          <h2 class="subtitulo">Informacion de contacto</h2>
           <div class="campo">
             <label>Nombre y apellido</label>
             <input type="text" id="nombreyapellido" class="inputsFormulario">
@@ -82,7 +82,7 @@
         </div>
       </form>
     </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 
 </html>
