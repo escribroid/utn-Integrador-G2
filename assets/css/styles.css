@@ -32,6 +32,7 @@ body{
 #tablaApi {
     color: var(--color-azul);
     float: right;
+    padding-right: 10px;
 }
 
 /* HERO */ 
