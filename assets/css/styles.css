@@ -58,6 +58,13 @@ body{
 .imgValoresImage{
     width: 100%;
 }
+iframe {
+    display: flex;
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
 
 /* FOOTER */
 footer{
