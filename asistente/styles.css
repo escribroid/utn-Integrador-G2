@@ -11,7 +11,10 @@
 form{
   margin-top: 2rem;
 }
-.pagina2{
+.pagina2 {
+  display: none;
+}
+.pagina3 {
   display: none;
 }
 

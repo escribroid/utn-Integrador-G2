@@ -1,226 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <title>{Grupo 2} Diseño Web</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="language" content="Spanish" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="robots" content="All" />
+        <meta name="REPLY-TO" content="" />
+        <meta name="distribution" content="Global" />
+        <meta name="Revisit-after" content="1 days" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/img/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script
+            src="https://kit.fontawesome.com/b417b9b875.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!--<link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />-->
+        <link rel="stylesheet" href="./assets/css/bases.css" type="text/css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="./assets/css/servicios.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/valores.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/tecnologias.css"
+            type="text/css"
+        />
+        <link rel="stylesheet" href="./assets/css/equipo.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="./assets/css/formulario.css"
+            type="text/css"
+        />
+        <script src="assets/librerias/jquery-3.6.4.min.js"></script>
+        <script src="assets/librerias/jquery.validate.js"></script>
+        <script src="assets/librerias/jspdf.umd.min.js"></script>
+        <script src="assets/js/api.js"></script>
+        <script src="assets/js/pdf.js"></script>
+        <script src="assets/js/validador.js"></script>
+        <script src="assets/js/app.js"></script>
+    </head>
 
-<head>
-    <title>{Grupo 2} Diseño Web</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="language" content="Spanish" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="All" />
-    <meta name="REPLY-TO" content="" />
-    <meta name="distribution" content="Global" />
-    <meta name="Revisit-after" content="1 days" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/b417b9b875.js" crossorigin="anonymous"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
-        rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />-->
-    <link rel="stylesheet" href="./assets/css/bases.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/servicios.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/valores.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/tecnologias.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/equipo.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/formulario.css" type="text/css" />
-    <script src="assets/librerias/jquery-3.6.4.min.js"></script>
-    <script src="assets/librerias/jquery.validate.js"></script>
-    <script src="assets/librerias/jspdf.umd.min.js"></script>
-    <script src="assets/js/api.js"></script>
-    <script src="assets/js/pdf.js"></script>
-    <script src="assets/js/validador.js"></script>
-    <script src="assets/js/app.js"></script>
-</head>
-
-<body>
-    <table id="tablaApi">
-        <tbody></tbody>
-    </table>
-    <div id="stop" class="boton-subir">
-        <a href="#top"><i class="fas fa-arrow-up"></i></a>
-    </div>
-    <header class="headerPrincipal">
-        <div class="container">
-            <h1 class="logo">
-                <img src="./assets/img/logo.svg" alt="Logo de {G2} Diseño Web">
-            </h1>
-            <nav>
-                <ul class="menu">
-                    <a class="menuLink" href="#navServicios"><i class="fa-regular fa-file-code"></i> Servicios</a>
-                    <a class="menuLink" href="#navValores"><i class="fa-regular fa-star"></i> Valores</a>
-                    <a class="menuLink" href="#navTecnologias"><i class="fa-regular fa-lightbulb"></i> Tecnologías</a>
-                    <a class="menuLink" href="#navEquipo"><i class="fa-regular fa-face-laugh"></i> Equipo</a>
-                    <a class="menuLink" href="#navFormulario"><i class="fa-regular fa-envelope"></i> Contacto</a>
-                </ul>
-            </nav>
+    <body>
+        <table id="tablaApi">
+            <tbody></tbody>
+        </table>
+        <div id="stop" class="boton-subir">
+            <a href="#top"><i class="fas fa-arrow-up"></i></a>
         </div>
-
-        <div class="hero container">
-            <div class="heroText">
-                <h1>Diseño Integral & Creativo</h1>
-                <p>Utilizamos las últimas tecnologías en el campo digital y cognitivo para transformar las
-                    organizaciones en todos los aspectos.</p>
-                <a href="asistente/asistente.html"><button class="boton">
-                    Asistente de presupuesto <i class="fa-regular fa-share-from-square fa-lg"></i></button></a>
-            </div>
-            <div class="heroImage">
-                <img class="imgHeroImage" src="assets/img/hero-image.svg" alt="Equipo de G2 trabajando en un proyecto." />
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="servicios container" id="navServicios">
-            <h2>Qué ofrecemos en {G2}</h2>
-            <div class="serviciosBoxes">
-                <div class="serviciosBoxesSingle backVioleta">
-                    <img src="./assets/img/servicios-estrategia.png" alt="Estrategia">
-                    <h5>Estrategia</h5>
-                </div>
-                <div class="serviciosBoxesSingle backAzul">
-                    <img src="./assets/img/servicios-diseno.png" alt="Estrategia">
-                    <h5>Diseño UX / UI</h5>
-                </div>
-                <div class="serviciosBoxesSingle backVerde">
-                    <img src="./assets/img/servicios-programacion.png" alt="Estrategia">
-                    <h5>Programación</h5>
-                </div>
-            </div>
-        </section>
-
-        <section class="valores" id="navValores">
-            <div class="valoresImage">
-                <img class="imgValoresImage" src="./assets/img/computadoras.png" alt="">
-            </div>
-            <div class="valoresText">
-                <h4 class="valoresTitle">En {G2} transformamos <span>negocios con soluciones digitales poderosas y
-                        adaptables</span> que satisfacen las necesidades de hoy y desbloquean las oportunidades del
-                    mañana.</h4>
-                <p class="text2">Creamos productos digitales para una variedad de necesidades aplicando el método ágil
-                    de desarrollo de software. Buscamos las herramientas, prácticas y tecnología para cada caso, con el
-                    objetivo de desarrollar soluciones confiables, sostenibles y eficientes.</p>
-            </div>
-        </section>
-
-        <section class="tecnologias" id="navTecnologias">
-            <h1 class="titulo_tec">Tecnologías</h1>
-            <h5 class="cuerpo_tec">Los lenguajes de programación que utilizamos en nuestros proyectos.</h5>
-            <div class="footer_imag">
-                <img src="./assets/img/logo-html.svg" alt="Logo de HTML">
-                <img src="./assets/img/logo-css.svg" alt="Logo de CSS">
-                <img src="./assets/img/logo-js.svg" alt="Logo de JavaScript">
-                <img src="./assets/img/logo-bootstrap.svg" alt="Logo de Bootstrap">
-                <img src="./assets/img/logo-git.svg" alt="Logo de Git">
-                <img src="./assets/img/logo-github.svg" alt="Logo de Github">
-                <img src="./assets/img/logo-java.svg" alt="Logo de Java">
-            </div>
-        </section>
-
-        <section class="equipo" id="navEquipo">
-            <h2>El team {G2}</h2>
-            <div class="contImagenesEquipo">
-                <div>
-                    <img class="img_equipo" src="./assets/img/equipo-martin.png" alt="Equipo Martín">
-                    <h6 class="nosotros">MARTIN PINI</h6>
-                    <p class="actividad">Project Manager</p>
-                </div>
-                <div>
-                    <img class="img_equipo" src="./assets/img/equipo-noelia.png" alt="Equipo Noelia">
-                    <h6 class="nosotros">NOELIA SOROKIN</h6>
-                    <p class="actividad">Estrategia</p>
-                </div>
-                <div>
-                    <img class="img_equipo" src="./assets/img/equipo-pato.png" alt="Equipo Pato">
-                    <h6 class="nosotros">PATO STANELONI</h6>
-                    <p class="actividad">Diseño UX/UI</p>
-                </div>
-                <div>
-                    <img class="img_equipo" src="./assets/img/equipo-samuel.png" alt="Equipo Samuel">
-                    <h6 class="nosotros">SAMUEL CALDERON</h6>
-                    <p class="actividad">Product Manager</p>
-                </div>
-                <div>
-                    <img class="img_equipo" src="./assets/img/equipo-sebastian.png" alt="Equipo Sebastián">
-                    <h6 class="nosotros">SEBASTIAN SUAREZ</h6>
-                    <p class="actividad">Developer</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="formulario container" id="navFormulario">
-            <h1>Formulario de Contacto</h1>
-            <div class="formularioForm">
-                <form id="main" action="#" name="contacto">
-                    <input type="text" id="nombre" class="input-padron" placeholder="Nombre y Apellido" type="text"
-                        name="nombre">
-                    <input type="email" id="correo" name="correo" class="input-padron" placeholder="email@dominio.com">
-                    <input type="tel" id="telefono" name="telefono" class="input-padron" placeholder="(XX) XXXX XXXX">
-                    <textarea cols="60" rows="10" id="mensaje" class="input-padron" placeholder="Su mensaje"
-                        required></textarea>
-                    <button type="submit" class="boton">Enviar formulario <i class="fa-regular fa-paper-plane fa-lg"></i></button>
-                </form>
-            </div>
-        </section>
-                <!--seccion del mapa de la ubicacion de la empresa en google maps-->
-                <section class="mapa">
-                    <div class="link_mapa">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.7634162968145!2d-58.515417087484984!3d-34.51537824962372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb152346fa78f%3A0x4e7569e6f847eb60!2sWeWork%20Espacios%20de%20Oficinas%20%26%20Coworking%20Blas%20Parera!5e0!3m2!1ses!2sar!4v1681260654984!5m2!1ses!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="datos_mapa">
-                                 
-                                    <div>
-                                        <h6 class="ubica">Ubicación</h6>		
-                                        <p>Blas Parera 3551<br>cp: B1636<br>Olivos<br>Prov. de Buenos Aires</p>						
-                                    
-                                    </div>
-                                    <div class="hora">
-                                        <h6>Horarios</h6>		
-                                    
-                                        <p>
-                                                Lunes a Viernes<br>
-                                                de 9:00 a &nbsp;19:00 hs.<br><br>
-                                        </p>
-                                    </div>
-                        </div>
-                         <style>
-                            .datos_mapa{display:flex;text-align: left;padding-left: 110px;}
-                            .hora{padding-left: 70px; text-align: left;}
-                        </style>       
-                        
-                    </div>
-                
-                </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footerInfo">
-                <h1>
-                    <img src="./assets/img/logo-footer.svg" alt="Logo de {G2} Diseño Web">
+        <header class="headerPrincipal">
+            <div class="container">
+                <h1 class="logo">
+                    <img
+                        src="./assets/img/logo.svg"
+                        alt="Logo de {G2} Diseño Web"
+                    />
                 </h1>
-                <h5 class="copyright">Copyright {G2} Diseño Web © 2023</h5>
+                <nav>
+                    <ul class="menu">
+                        <a class="menuLink" href="#navServicios"
+                            ><i class="fa-regular fa-file-code"></i>
+                            Servicios</a
+                        >
+                        <a class="menuLink" href="#navValores"
+                            ><i class="fa-regular fa-star"></i> Valores</a
+                        >
+                        <a class="menuLink" href="#navTecnologias"
+                            ><i class="fa-regular fa-lightbulb"></i>
+                            Tecnologías</a
+                        >
+                        <a class="menuLink" href="#navEquipo"
+                            ><i class="fa-regular fa-face-laugh"></i> Equipo</a
+                        >
+                        <a class="menuLink" href="#navFormulario"
+                            ><i class="fa-regular fa-envelope"></i> Contacto</a
+                        >
+                    </ul>
+                </nav>
             </div>
-            <div class="footerSocial">
-                <a href="https://www.instagram.com/accounts/login/" target="_blank" ><img src="./assets/img/icon-instagram.svg" alt="Logo de Instagram"></a>
-                <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/icon-facebook.svg" alt="Logo de Facebook"></a>
-                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><img src="./assets/img/icon-twitter.svg" alt="Logo de Twitter"></a>
+
+            <div class="hero container">
+                <div class="heroText">
+                    <h1>Diseño Integral & Creativo</h1>
+                    <p>
+                        Utilizamos las últimas tecnologías en el campo digital y
+                        cognitivo para transformar las organizaciones en todos
+                        los aspectos.
+                    </p>
+                    <a href="asistente/asistente.html"
+                        ><button class="boton">
+                            Asistente de presupuesto
+                            <i
+                                class="fa-regular fa-share-from-square fa-lg"
+                            ></i></button
+                    ></a>
+                </div>
+                <div class="heroImage">
+                    <img
+                        class="imgHeroImage"
+                        src="assets/img/hero-image.svg"
+                        alt="Equipo de G2 trabajando en un proyecto."
+                    />
+                </div>
             </div>
-        </div>
-    </footer>
+        </header>
 
-</body>
+        <main>
+            <section class="servicios container" id="navServicios">
+                <h2>Qué ofrecemos en {G2}</h2>
+                <div class="serviciosBoxes">
+                    <div class="serviciosBoxesSingle backVioleta">
+                        <img
+                            src="./assets/img/servicios-estrategia.png"
+                            alt="Estrategia"
+                        />
+                        <h5>Estrategia</h5>
+                    </div>
+                    <div class="serviciosBoxesSingle backAzul">
+                        <img
+                            src="./assets/img/servicios-diseno.png"
+                            alt="Estrategia"
+                        />
+                        <h5>Diseño UX / UI</h5>
+                    </div>
+                    <div class="serviciosBoxesSingle backVerde">
+                        <img
+                            src="./assets/img/servicios-programacion.png"
+                            alt="Estrategia"
+                        />
+                        <h5>Programación</h5>
+                    </div>
+                </div>
+            </section>
 
+            <section class="valores" id="navValores">
+                <div class="valoresImage">
+                    <img
+                        class="imgValoresImage"
+                        src="./assets/img/computadoras.png"
+                        alt=""
+                    />
+                </div>
+                <div class="valoresText">
+                    <h4 class="valoresTitle">
+                        En {G2} transformamos
+                        <span
+                            >negocios con soluciones digitales poderosas y
+                            adaptables</span
+                        >
+                        que satisfacen las necesidades de hoy y desbloquean las
+                        oportunidades del mañana.
+                    </h4>
+                    <p class="text2">
+                        Creamos productos digitales para una variedad de
+                        necesidades aplicando el método ágil de desarrollo de
+                        software. Buscamos las herramientas, prácticas y
+                        tecnología para cada caso, con el objetivo de
+                        desarrollar soluciones confiables, sostenibles y
+                        eficientes.
+                    </p>
+                </div>
+            </section>
+
+            <section class="tecnologias" id="navTecnologias">
+                <h1 class="titulo_tec">Tecnologías</h1>
+                <h5 class="cuerpo_tec">
+                    Los lenguajes de programación que utilizamos en nuestros
+                    proyectos.
+                </h5>
+                <div class="footer_imag">
+                    <img src="./assets/img/logo-html.svg" alt="Logo de HTML" />
+                    <img src="./assets/img/logo-css.svg" alt="Logo de CSS" />
+                    <img
+                        src="./assets/img/logo-js.svg"
+                        alt="Logo de JavaScript"
+                    />
+                    <img
+                        src="./assets/img/logo-bootstrap.svg"
+                        alt="Logo de Bootstrap"
+                    />
+                    <img src="./assets/img/logo-git.svg" alt="Logo de Git" />
+                    <img
+                        src="./assets/img/logo-github.svg"
+                        alt="Logo de Github"
+                    />
+                    <img src="./assets/img/logo-java.svg" alt="Logo de Java" />
+                </div>
+            </section>
+
+            <section class="equipo" id="navEquipo">
+                <h2>El team {G2}</h2>
+                <div class="contImagenesEquipo">
+                    <div>
+                        <img
+                            class="img_equipo"
+                            src="./assets/img/equipo-martin.png"
+                            alt="Equipo Martín"
+                        />
+                        <h6 class="nosotros">MARTIN PINI</h6>
+                        <p class="actividad">Project Manager</p>
+                    </div>
+                    <div>
+                        <img
+                            class="img_equipo"
+                            src="./assets/img/equipo-noelia.png"
+                            alt="Equipo Noelia"
+                        />
+                        <h6 class="nosotros">NOELIA SOROKIN</h6>
+                        <p class="actividad">Estrategia</p>
+                    </div>
+                    <div>
+                        <img
+                            class="img_equipo"
+                            src="./assets/img/equipo-pato.png"
+                            alt="Equipo Pato"
+                        />
+                        <h6 class="nosotros">PATO STANELONI</h6>
+                        <p class="actividad">Diseño UX/UI</p>
+                    </div>
+                    <div>
+                        <img
+                            class="img_equipo"
+                            src="./assets/img/equipo-samuel.png"
+                            alt="Equipo Samuel"
+                        />
+                        <h6 class="nosotros">SAMUEL CALDERON</h6>
+                        <p class="actividad">Product Manager</p>
+                    </div>
+                    <div>
+                        <img
+                            class="img_equipo"
+                            src="./assets/img/equipo-sebastian.png"
+                            alt="Equipo Sebastián"
+                        />
+                        <h6 class="nosotros">SEBASTIAN SUAREZ</h6>
+                        <p class="actividad">Developer</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="formulario container" id="navFormulario">
+                <h1>Formulario de Contacto</h1>
+                <div class="formularioForm">
+                    <form id="main" action="#" name="contacto">
+                        <input
+                            type="text"
+                            id="nombre"
+                            class="input-padron"
+                            placeholder="Nombre y Apellido"
+                            type="text"
+                            name="nombre"
+                        />
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            class="input-padron"
+                            placeholder="email@dominio.com"
+                        />
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            class="input-padron"
+                            placeholder="(XX) XXXX XXXX"
+                        />
+                        <textarea
+                            cols="60"
+                            rows="10"
+                            id="mensaje"
+                            class="input-padron"
+                            placeholder="Su mensaje"
+                            required
+                        ></textarea>
+                        <button type="submit" class="boton">
+                            Enviar formulario
+                            <i class="fa-regular fa-paper-plane fa-lg"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!--seccion del mapa de la ubicacion de la empresa en google maps-->
+            <section class="mapa">
+                <div class="link_mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.7634162968145!2d-58.515417087484984!3d-34.51537824962372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb152346fa78f%3A0x4e7569e6f847eb60!2sWeWork%20Espacios%20de%20Oficinas%20%26%20Coworking%20Blas%20Parera!5e0!3m2!1ses!2sar!4v1681260654984!5m2!1ses!2sar"
+                        width="600"
+                        height="300"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    <div class="datos_mapa">
+                        <div>
+                            <h6 class="ubica">Ubicación</h6>
+                            <p>
+                                Blas Parera 3551<br />cp: B1636<br />Olivos<br />Prov.
+                                de Buenos Aires
+                            </p>
+                        </div>
+                        <div class="hora">
+                            <h6>Horarios</h6>
+
+                            <p>
+                                Lunes a Viernes<br />
+                                de 9:00 a &nbsp;19:00 hs.<br /><br />
+                            </p>
+                        </div>
+                    </div>
+                    <style>
+                        .datos_mapa {
+                            display: flex;
+                            text-align: left;
+                            padding-left: 110px;
+                        }
+                        .hora {
+                            padding-left: 70px;
+                            text-align: left;
+                        }
+                    </style>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footerInfo">
+                    <h1>
+                        <img
+                            src="./assets/img/logo-footer.svg"
+                            alt="Logo de {G2} Diseño Web"
+                        />
+                    </h1>
+                    <h5 class="copyright">Copyright {G2} Diseño Web © 2023</h5>
+                </div>
+                <div class="footerSocial">
+                    <a
+                        href="https://www.instagram.com/accounts/login/"
+                        target="_blank"
+                        ><img
+                            src="./assets/img/icon-instagram.svg"
+                            alt="Logo de Instagram"
+                    /></a>
+                    <a href="https://es-la.facebook.com/" target="_blank"
+                        ><img
+                            src="./assets/img/icon-facebook.svg"
+                            alt="Logo de Facebook"
+                    /></a>
+                    <a
+                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+                        target="_blank"
+                        ><img
+                            src="./assets/img/icon-twitter.svg"
+                            alt="Logo de Twitter"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
