@@ -66,6 +66,29 @@ iframe {
     border-radius: 10px;
 }
 
+/* MAPA */
+.mapaTitulo{
+    text-align: center;
+    color: var(--color-verde);
+    padding-bottom: 2rem;
+}
+.mapa{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+.mapaIframe{
+    width: 50%;
+}
+.datosMapa{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.mapaUbicacion h6, .mapaHora h6{
+    color: var(--color-verde);
+}
+
 /* FOOTER */
 footer{
     border-top: 1px solid var(--color-grisclaro);
@@ -133,5 +156,14 @@ footer .container{
     }
     .heroText h1{
         font-size: 2.3rem;
+    }
+    .mapa{
+        display: block;
+    }
+    .mapaIframe{
+        width: 100%;
+    }
+    .datosMapa{
+        width: 100%;
     }
 }
