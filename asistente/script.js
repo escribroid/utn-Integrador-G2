@@ -23,8 +23,8 @@ BotonAvance1.addEventListener("click", function () {
 
 BotonAvance2.addEventListener("click", function () {
     // tomo info de los input
-    let nombreEmpresa = document.getElementById("nombre-empresa").value;
-    let fechaEntrega = document.getElementById("fecha-entrega").value;
+    let nombreEmpresa = document.getElementById("nombreEmpresa").value;
+    let fechaEntrega = document.getElementById("fechaEntrega").value;
     let nombreyapellido = document.getElementById("nombreyapellido").value;
     let mail = document.getElementById("email").value;
     movPag.style.display = "none";

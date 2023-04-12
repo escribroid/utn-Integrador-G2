@@ -53,13 +53,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
         <script src="jspdf.umd.min.js"></script>
+        <script src="../assets/librerias/jquery.validate.js"></script>
     </head>
     <body>
         <div class="container">
             <h1>Solicitud de presupuesto</h1>
             <div class="formulario-principal">
                 <!-- <div class="step"> -->
-                <form action="#">
+                <form action="#" name="wizard">
                     <!-- Página 1  -->
                     <div class="pagina movPag">
                         <h2 class="subtitulo">Información básica</h2>
@@ -67,7 +68,7 @@
                             <label>Nombre de su empresa</label>
                             <input
                                 type="text"
-                                id="nombre-empresa"
+                                id="nombreEmpresa"
                                 class="inputsFormulario"
                             />
                         </div>
@@ -83,7 +84,7 @@
                             <label>Fecha de entrega aproximada</label>
                             <input
                                 type="date"
-                                id="fecha-entrega"
+                                id="fechaEntrega"
                                 class="inputsFormulario"
                             />
                         </div>
@@ -167,5 +168,6 @@
         </div>
         <script src="script.js"></script>
         <script src="pdf.js"></script>
+        <script src="validadorAsistente.js"></script>
     </body>
 </html>
