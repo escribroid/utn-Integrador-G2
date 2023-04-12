@@ -1,173 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Asistente de Presupuesto</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="language" content="Spanish" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="" />
-        <meta name="robots" content="All" />
-        <meta name="REPLY-TO" content="" />
-        <meta name="distribution" content="Global" />
-        <meta name="Revisit-after" content="1 days" />
-        <link rel=”icon” href=”./favicon.ico” type=”image/x-icon” /> <link
-        rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../assets/img/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="../assets/img/favicon/favicon-16x16.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../assets/img/favicon/favicon-48x48.png"
-        />
-        <link rel="manifest" href="./site.webmanifest" />
-        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="../assets/css/bases.css" />
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-        <script src="jspdf.umd.min.js"></script>
-        <script src="../assets/librerias/jquery.validate.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Solicitud de presupuesto</h1>
-            <div class="formulario-principal">
-                <!-- <div class="step"> -->
-                <form action="#" name="wizard">
-                    <!-- Página 1  -->
-                    <div class="pagina movPag">
-                        <h2 class="subtitulo">Información básica</h2>
-                        <div class="campo">
-                            <label>Nombre de su empresa</label>
-                            <input
-                                type="text"
-                                id="nombreEmpresa"
-                                class="inputsFormulario"
-                            />
-                        </div>
-                        <!-- <div class="campo"> -->
-                        <!-- <label>Tipo de desarrollo</label> -->
-                        <!-- <select name="web" id="web" onchange="ShowSelected();" class="inputsFormulario">  -->
-                        <!-- <option value="landing-page">Landing Page</option>  -->
-                        <!-- <option value="web-institucional">Web Institucional</option>  -->
-                        <!-- <option value="e-commerce">E-Commerce</option>  -->
-                        <!-- </select> -->
-                        <!-- </div>  -->
-                        <div class="campo">
-                            <label>Fecha de entrega aproximada</label>
-                            <input
-                                type="date"
-                                id="fechaEntrega"
-                                class="inputsFormulario"
-                            />
-                        </div>
-                        <div class="campo">
-                            <button class="boton botonAnterior">
-                                <a href="../index.html">Volver a Home</a>
-                            </button>
-                            <button
-                                class="avanzarpag1 siguiente boton botonSiguiente"
-                            >
-                                Siguiente
-                            </button>
-                        </div>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Asistente de Presupuesto</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="language" content="Spanish" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="All" />
+    <meta name="REPLY-TO" content="" />
+    <meta name="distribution" content="Global" />
+    <meta name="Revisit-after" content="1 days" />
+    <link rel=”icon” href=”./favicon.ico” type=”image/x-icon” />
+    <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-48x48.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/bases.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="jspdf.umd.min.js"></script>
+    <script src="../assets/librerias/jquery.validate.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Solicitud de presupuesto</h1>
+        <div class="formulario-principal">
+            <!-- <div class="step"> -->
+            <form action="#" name="wizard">
+                <!-- Página 1  -->
+                <div class="pagina movPag">
+                    <h2 class="subtitulo">Información básica</h2>
+                    <div class="campo">
+                        <label>Nombre de su empresa</label>
+                        <input type="text" id="nombreEmpresa" class="inputsFormulario" />
                     </div>
-
-                    <!-- Página 2  -->
-                    <div class="pagina pagina2">
-                        <h2 class="subtitulo">Informacion de contacto</h2>
-                        <div class="campo">
-                            <label>Nombre y apellido</label>
-                            <input
-                                type="text"
-                                id="nombreyapellido"
-                                class="inputsFormulario"
-                            />
-                        </div>
-                        <div class="campo">
-                            <label>E-mail</label>
-                            <input
-                                type="text"
-                                id="email"
-                                class="inputsFormulario"
-                            />
-                        </div>
-                        <div class="campo">
-                            <button
-                                class="retrocederpag0 anterior boton botonAnterior"
-                            >
-                                Anterior
-                            </button>
-                            <button
-                                class="avanzarpag2 siguiente boton botonSiguiente"
-                            >
-                                Siguiente
-                            </button>
-                        </div>
+                    <!-- <div class="campo"> -->
+                    <!-- <label>Tipo de desarrollo</label> -->
+                    <!-- <select name="web" id="web" onchange="ShowSelected();" class="inputsFormulario">  -->
+                    <!-- <option value="landing-page">Landing Page</option>  -->
+                    <!-- <option value="web-institucional">Web Institucional</option>  -->
+                    <!-- <option value="e-commerce">E-Commerce</option>  -->
+                    <!-- </select> -->
+                    <!-- </div>  -->
+                    <div class="campo">
+                        <label>Fecha de entrega aproximada</label>
+                        <input type="date" id="fechaEntrega" class="inputsFormulario" />
                     </div>
-                    <div class="pagina pagina3">
-                        <h2 class="subtitulo">
-                            Gracias, Nos contactaremos a la bravedad
-                        </h2>
-                        <h3>Resumen</h3>
-                        <br><br>
+                    <div class="campo">
+                        <button class="boton botonAnterior">
+                            <a href="../index.html">Volver a Home</a>
+                        </button>
+                        <button class="avanzarpag1 siguiente boton botonSiguiente">
+                            Siguiente
+                        </button>
+                    </div>
+                </div>
 
-
-                        <span class="span1"></span>
-                        <br><br>
-
-                        <span class="span2"></span>
-                        <br><br>
-
-                        <span class="span3"></span>
-                        <br><br>
-
-                        <span class="span4"></span>
-                        <br><br>
-
-
-                        <button
-                            class="retrocederpag1 anterior boton botonAnterior"
-                        >
+                <!-- Página 2  -->
+                <div class="pagina pagina2">
+                    <h2 class="subtitulo">Informacion de contacto</h2>
+                    <div class="campo">
+                        <label>Nombre y apellido</label>
+                        <input type="text" id="nombreyapellido" class="inputsFormulario" />
+                    </div>
+                    <div class="campo">
+                        <label>E-mail</label>
+                        <input type="text" id="email" class="inputsFormulario" />
+                    </div>
+                    <div class="campo">
+                        <button class="retrocederpag0 anterior boton botonAnterior">
                             Anterior
                         </button>
-                        <button class="boton botonAnterior">
-                            <a href="../index.html">Cerrar</a>
-                            <button onclick="crearPdf()">Crear PDF</button>
+                        <button class="avanzarpag2 siguiente boton botonSiguiente">
+                            Siguiente
                         </button>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="pagina pagina3">
+                    <h2 class="subtitulo">Gracias, Nos contactaremos a la bravedad</h2>
+                    <h3>Resumen</h3>
+                    <br><br>
+
+                    <span class="span1"></span>
+                    <br><br>
+
+                    <span class="span2"></span>
+                    <br><br>
+
+                    <span class="span3"></span>
+                    <br><br>
+
+                    <span class="span4"></span>
+                    <br><br>
+
+                    <button class="retrocederpag1 anterior boton botonAnterior">Anterior</button>
+                    <button class="boton botonAnterior">
+                        <a href="../index.html">Cerrar</a>
+                        <button  onclick="crearPdf()">Crear PDF</button>
+                    </button>
+                </div>
+            </form>
         </div>
-        <script src="script.js"></script>
-        <script src="pdf.js"></script>
-        <script src="validadorAsistente.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+    <script src="pdf.js"></script>
+    <script src="validadorAsistente.js"></script>
+</body>
+
 </html>

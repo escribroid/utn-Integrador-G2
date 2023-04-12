@@ -26,6 +26,9 @@ form{
   background: none;
   border: 1px var(--color-verde) solid;
 }
+.botonAnterior a{
+  color: var(--color-grisclaro);
+}
 
 /* FORMULARIO */
 .subtitulo{
