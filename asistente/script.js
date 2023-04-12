@@ -11,10 +11,12 @@ const BotonAvance2 = document.querySelector(".avanzarpag2");
 BotonAvance1.addEventListener("click", function () {
   // recopilar datos del primer paso
   let name = document.getElementById("nombre-empresa").value;
-  //alert("Hola su empresa es " + name);
-  let tipo_web = document.querySelector("#web").value;
+  // alert("Hola su empresa es " + name);
+
+      
+  // let tipo_web = document.querySelector("#web").value;
   let fechaentrega = document.getElementById("fecha-entrega").value;
-  //alert("Ya agendamos el tipo de desarrollo que desea y la fecha");
+  // alert("Ya agendamos el tipo de desarrollo que desea y la fecha");
   movPag.style.display = "none";
   pagina2.style.display = "block";
 });
@@ -37,3 +39,7 @@ BotonVolver0.addEventListener("click", function () {
 
   // ocultar primer pagina y mostrar la segunda 
 });
+// otra opcion para mostrar lo que hay en el select
+// var x = document.getElementById("web").selectedIndex;
+    // var y = document.getElementById("web").options;
+    // alert("Index: " + y[x].index + " is " + y[x].text);
