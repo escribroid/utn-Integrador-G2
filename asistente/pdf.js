@@ -7,10 +7,11 @@ function crearPdf() {
   paso3 = document.getElementById("nombreyapellido").value;
   paso4 = document.getElementById("email").value;
 
-  doc.text(10, 10, paso1);
-  doc.text(10, 20, paso2);
-  doc.text(10, 30, paso3);
-  doc.text(10, 40, paso4);
+  doc.text(50, 30, "G2 resumen sarasa sarasa");
+  doc.text(10, 50, "Nombre de empresa:     " + paso1);
+  doc.text(10, 65, "Fecha de entrega:         " + paso2);
+  doc.text(10, 80, "Nombre y Apellido:        " + paso3);
+  doc.text(10, 95, "Email:                          " + paso4);
 
   doc.save('Resumen.pdf');
 }
