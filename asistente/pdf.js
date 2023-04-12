@@ -7,7 +7,7 @@ function crearPdf() {
   paso3 = document.getElementById("nombreyapellido").value;
   paso4 = document.getElementById("email").value;
 
-  doc.text(50, 30, "G2 resumen sarasa sarasa");
+  doc.text(50, 30, "{G2} Resumen de su presupuesto:");
   doc.text(10, 50, "Nombre de empresa:     " + paso1);
   doc.text(10, 65, "Fecha de entrega:         " + paso2);
   doc.text(10, 80, "Nombre y Apellido:        " + paso3);
