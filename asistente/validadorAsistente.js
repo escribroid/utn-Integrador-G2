@@ -18,7 +18,7 @@ $(function() {
           minlength: 3,
           maxlength: 50,
         },
-        'E-mail': {
+        email: {
           required: true,
           presence: true,
           email: true,
@@ -28,22 +28,27 @@ $(function() {
 
       },
       messages: {
-        nombre: {
+        nombreEmpresa: {
             required: "Por favor, introduzca su nombre y apellido",
             minlength: "Su nombre debe tener entre 3 y 50 caracteres.",
             maxlength: "Su nombre debe tener entre 3 y 50 caracteres.",
           },
-        telefono: {
-          required: "Por favor proporcione un telefono",
-          minlength: "El número debe tener entre 5 y 15 caracteres.",
-          maxlength: "El número debe tener entre 5 y 15 caracteres.",
-          digits: "Ingrese solo numeros",
+          fechaEntrega: {
+            required: "Por favor proporcione un telefono",
+            minlength: "El número debe tener entre 5 y 15 caracteres.",
+            maxlength: "El número debe tener entre 5 y 15 caracteres.",
+            digits: "Ingrese solo numeros",
 
-        },
-        correo: {
+          },
+        email: {
             required: "Por favor ingrese un correo electronico",
             email: "Introduce correo electrónico válido de hasta 50 caracteres",
             length: "Su contraseña debe tener al menos 55 caracteres.",
+          },
+        nombreyapellido: {
+            required: "Por favor, introduzca su nombre y apellido",
+            minlength: "Su nombre debe tener entre 3 y 50 caracteres.",
+            maxlength: "Su nombre debe tener entre 3 y 50 caracteres.",
           },
       },
       submitHandler: function(form) {
