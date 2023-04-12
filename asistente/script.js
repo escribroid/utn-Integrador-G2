@@ -13,7 +13,7 @@ BotonAvance1.addEventListener("click", function () {
   let name = document.getElementById("nombre-empresa").value;
   // alert("Hola su empresa es " + name);
 
-      
+  let tipo_web = document.getElementById("web").value;
   // let tipo_web = document.querySelector("#web").value;
   let fechaentrega = document.getElementById("fecha-entrega").value;
   // alert("Ya agendamos el tipo de desarrollo que desea y la fecha");
