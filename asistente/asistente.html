@@ -33,40 +33,34 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
     <script src="jspdf.umd.min.js"></script>
-    <script src="../assets/librerias/jquery.validate.js"></script>
+    <script src="jquery.validate.js"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Solicitud de presupuesto</h1>
         <div class="formulario-principal">
-            <!-- <div class="step"> -->
-            <form action="#" name="wizard">
+            <form id="wizard" action="#" name="wizard">
                 <!-- Página 1  -->
                 <div class="pagina movPag">
                     <h2 class="subtitulo">Información básica</h2>
                     <div class="campo">
                         <label>Nombre de su empresa</label>
-                        <input type="text" id="nombreEmpresa" class="inputsFormulario" />
-                    </div>
-                    <!-- <div class="campo"> -->
-                    <!-- <label>Tipo de desarrollo</label> -->
-                    <!-- <select name="web" id="web" onchange="ShowSelected();" class="inputsFormulario">  -->
-                    <!-- <option value="landing-page">Landing Page</option>  -->
-                    <!-- <option value="web-institucional">Web Institucional</option>  -->
-                    <!-- <option value="e-commerce">E-Commerce</option>  -->
-                    <!-- </select> -->
-                    <!-- </div>  -->
+                        <input type="text" id="nombreEmpresa" name="nombreEmpresa" class="inputsFormulario" />
+                    </div>                 
+
+
                     <div class="campo">
                         <label>Fecha de entrega aproximada</label>
-                        <input type="date" id="fechaEntrega" class="inputsFormulario" />
+                        <input type="date" id="fechaEntrega" name="fechaEntrega" class="inputsFormulario" />
                     </div>
                     <div class="campo">
                         <button class="boton botonAnterior">
                             <a href="../index.html">Volver a Home</a>
                         </button>
-                        <button class="avanzarpag1 siguiente boton botonSiguiente">
+                        <button type="submit" name="submit" class="avanzarpag1 siguiente boton botonSiguiente">
                             Siguiente
                         </button>
                     </div>
@@ -77,17 +71,17 @@
                     <h2 class="subtitulo">Informacion de contacto</h2>
                     <div class="campo">
                         <label>Nombre y apellido</label>
-                        <input type="text" id="nombreyapellido" class="inputsFormulario" />
+                        <input type="text" id="nombreyapellido" name="nombreyapellido" class="inputsFormulario" />
                     </div>
                     <div class="campo">
                         <label>E-mail</label>
-                        <input type="text" id="email" class="inputsFormulario" />
+                        <input type="text" id="correo" name="correo" class="inputsFormulario" />
                     </div>
                     <div class="campo">
-                        <button class="retrocederpag0 anterior boton botonAnterior">
+                        <button type="submit" class="retrocederpag0 anterior boton botonAnterior">
                             Anterior
                         </button>
-                        <button class="avanzarpag2 siguiente boton botonSiguiente">
+                        <button type="submit" class="avanzarpag2 siguiente boton botonSiguiente">
                             Siguiente
                         </button>
                     </div>
@@ -103,10 +97,12 @@
                     <br><br>
                     <span class="span4"></span>
                     <br><br>
-                    <button class="retrocederpag1 anterior boton botonAnterior">Anterior</button>
-                    <button class="boton botonAnterior">
+                    <button type="submit" class="retrocederpag1 anterior boton botonAnterior">Anterior</button>
+                    <button type="submit" class="boton botonAnterior">
                         <a href="../index.html">Cerrar</a>
                     </button>
+                   
+
                     <button class="boton botonSiguiente" onclick="crearPdf()">Crear PDF</button>
                 </div>
             </form>

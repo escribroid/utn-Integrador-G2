@@ -54,6 +54,13 @@ form{
   padding-right: 1rem;
   margin-top: 0.5rem;
 }
+form .error {
+  color: yellow;
+  background-color: blue;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 
 @media (max-width: 1200px) {
   .container{
