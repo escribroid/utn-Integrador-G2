@@ -1,0 +1,79 @@
+/* VARIBLES BASES */
+:root {
+    --color-background: #181818;
+    --color-body: #FFFFFF;
+
+    --color-violeta: #B861E0;
+    --color-azul: #7171E2;
+    --color-verde: #1FC1AE;
+
+    --color-grisoscuro: #B6B6B6;
+    --color-grisclaro: #E9E9E9;
+
+    --gradiente: linear-gradient(to right, #B861E0, #7171E2, #1FC1AE);
+
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', sans-serif; 
+}
+
+/* ESTILOS GENERALES */ 
+body{
+    background: var(--color-background);
+    color: var(--color-body);
+    font-family: var(--roboto);
+    font-weight: 100;
+    letter-spacing: 0.03rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
+h1{
+    font-family: var(--roboto-mono);
+    font-size: 3rem;
+}
+h2{
+    font-weight: 100;
+    font-size: 2.8rem;
+}
+h3{
+    font-weight: 400;
+    font-size: 2.4rem;
+    font-family: var(--roboto-mono);
+}
+h4{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.2rem;
+}
+h5{
+    font-family: var(--roboto-mono);
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+h6{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+a{
+    color: var(--color-azul);
+}
+.boton{
+    background: var(--gradiente);
+    padding: 1rem 1.5rem 1.1rem 1.5rem;
+    border: none;
+    color: var(--color-body);
+    font-family: var(--roboto-mono);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.boton:hover{
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+section{
+    padding-top: 5rem;
+}
