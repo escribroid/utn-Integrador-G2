@@ -80,7 +80,7 @@ $(document).ready(function() {
     document.getElementById("enviado").innerHTML = ("Formulario Enviado");
 
     setTimeout(function(){
-      window.location.href = "/asistente.html" ;
+      window.location.href = "../index.html" ;
   }, 3000);
   }
   
