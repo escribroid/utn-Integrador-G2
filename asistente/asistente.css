@@ -57,13 +57,14 @@ form{
   padding-right: 1rem;
   margin-top: 0.5rem;
 }
-
+h6{
+  margin: 0px;
+}
 span {
   width: 150px;
   height: 50px;
   background-color: blue;
 }
-
 form .error {
   color: black;
   font-weight: bold;

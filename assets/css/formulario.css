@@ -38,4 +38,7 @@ form .error {
     width: 94%;
     margin: 0px auto;
   }
+  .input-padron{
+    width: 90%;
+  }
 }
