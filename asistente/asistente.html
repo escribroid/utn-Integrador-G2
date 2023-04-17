@@ -41,14 +41,14 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Solicitud de presupuesto</h1>
+    <div class="container formContainer">
+        <h1 class="h1Asistente">Solicitud de presupuesto</h1>
         <div class="formulario-principal">
             <form id="wizard" action="#" name="wizard">
                 
                 <!-- Página 1 -->
                 <div class="pagina movPag">
-                    <h2 class="subtitulo">Información básica</h2>
+                    <h2 class="subtitulo h2Asistente">Información básica</h2>
                     <div class="campo">
                         <label>Nombre de su empresa</label>
                         <input type="text" id="nombreEmpresa" name="nombreEmpresa" class="inputsFormulario" />
@@ -56,11 +56,7 @@
 
                     <div class="campo">
                         <label>Fecha de entrega aproximada</label>
-                        <input type="date" id="fechaEntrega" name="fechaEntrega" class="inputsFormulario" required />
-                    </div>
-                    <div class="campo">
-
-
+                        <input type="date" id="fechaEntrega" name="fechaEntrega" class="inputsFormulario" required/>
                     </div>
                     <div id="msgError1" class="msgError"></div>
 
@@ -72,7 +68,7 @@
 
                 <!-- Página 2 -->
                 <div class="pagina pagina2">
-                    <h2 class="subtitulo">Informacion de contacto</h2>
+                    <h2 class="subtitulo h2Asistente">Informacion de contacto</h2>
                     <div class="campo">
                         <label>Nombre y apellido</label>
                         <input type="text" id="nombreyapellido" name="nombreyapellido" class="inputsFormulario" />
@@ -81,8 +77,6 @@
                         <label>E-mail</label>
                         <input type="email" id="correo" name="correo" class="inputsFormulario" />
                     </div>
-                    <div class="campo"></div>
-
                     <div id="msgError2" class="msgError"></div>
 
                     <button type="button" class="boton botonAnterior"><a href="../index.html">Cerrar</a></button>
@@ -94,16 +88,15 @@
 
                 <!-- Página 3 -->
                 <div class="pagina pagina3">
-                    <p class="subtitulo">Gracias, nos contactaremos a la brevedad</p>
 
-                    <h3>{G2} Resumen de su presupuesto</h3>
-                    <h6>Nombre de empresa:</h6>
+                    <h3 class="h3Asistente">{G2} Resumen</h3>
+                    <h6 class="h6Asistente">Nombre de empresa:</h6>
                     <p class="span1"></p>
-                    <h6>Fecha de entrega:</h6>
+                    <h6 class="h6Asistente">Fecha de entrega:</h6>
                     <p class="span2"></p>
-                    <h6>Nombre y Apellido:</h6>
+                    <h6 class="h6Asistente">Nombre y Apellido:</h6>
                     <p class="span3"></p>
-                    <h6>Email:</h6>
+                    <h6 class="h6Asistente">Email:</h6>
                     <p class="span4"></p>
 
                     <button type="button" class="retrocederpag1 anterior boton botonAnterior">Anterior</button>
@@ -118,6 +111,8 @@
 
             <!-- Página 4 -->
             <div class="pagina pagina4">
+                <p class="subtitulo">Gracias, nos contactaremos a la brevedad</p>
+
                 <div id="enviado" class="container">Formulario Enviado</div>
             </div>
 

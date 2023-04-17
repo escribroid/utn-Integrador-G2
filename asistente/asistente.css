@@ -8,8 +8,12 @@
   padding: 2rem;
   margin-top: 2rem;
 }
+.formContainer{
+  margin-top: 10px;
+  
+}
 form{
-  margin-top: 2rem;
+  margin: 0;
 }
 .pagina2 {
   display: none;
@@ -20,7 +24,23 @@ form{
 .pagina4 {
   display: none;
 }
+.h1Asistente {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+}
+.h2Asistente{
+  margin: 15px 0;
 
+}
+.h3Asistente{
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+
+}
 /* BOTONES */
 .botonSiguiente{
   background: var(--color-verde);
@@ -57,14 +77,24 @@ form{
   padding-right: 1rem;
   margin-top: 0.5rem;
 }
-h6{
-  margin: 0px;
+.resumen {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
-span {
-  width: 150px;
-  height: 50px;
-  background-color: blue;
+
+.h6Asistente {
+  text-transform: none;
+  margin: 0;
 }
+.span1, .span2, .span3, .span4 {
+  margin:  5px 0 10px 0;
+}
+#enviado {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 form .error {
   color: black;
   font-weight: bold;
@@ -73,6 +103,14 @@ form .error {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+.msgError {
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgb(225, 65, 97);
+  margin-bottom: 10px;  
+  justify-content: center;}
 
 @media (max-width: 1200px) {
   .container{
@@ -81,6 +119,6 @@ form .error {
 }
 @media (max-width: 768px) {
   .container{
-    width: 96%;
+    width: 80%;
   }
 }
